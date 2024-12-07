@@ -78,6 +78,68 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
 }
+/* Projects Section */
+.projects-section {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #007BFF;
+    text-align: center;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    border-radius: 8px;
+}
+
+.project-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design for Projects Section */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 40px 20px;
+    }
+
+    .projects-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card img {
+        max-width: 100%;
+    }
+}
 
 /* Contact Section */
 .contact-section {
