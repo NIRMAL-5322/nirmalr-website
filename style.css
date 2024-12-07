@@ -19,6 +19,10 @@ body {
     padding: 150px 20px;
     text-align: center;
     background-size: cover;
+    height: 100vh; /* Ensures full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-section h1 {
@@ -78,6 +82,7 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 /* Projects Section */
 .projects-section {
     padding: 60px 20px;
@@ -109,6 +114,8 @@ body {
 
 .project-card img {
     border-radius: 8px;
+    width: 100%; /* Ensures the image takes up full container width */
+    height: auto; /* Maintains aspect ratio */
 }
 
 .project-card h5 {
@@ -138,6 +145,7 @@ body {
 
     .project-card img {
         max-width: 100%;
+        height: auto; /* Maintains image aspect ratio */
     }
 }
 
