@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.section .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin: 0.5rem 0;
+}
+
+.project {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
