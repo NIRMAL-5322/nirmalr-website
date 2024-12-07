@@ -9,20 +9,22 @@ body, h1, h2, h3, p {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background: #f5f5f5; /* Light grey background */
+    background: #f5f5f5;
     color: #333;
 }
 
+/* Hero Section */
 .hero-section {
-    background: url('https://example.com/path-to-your-cloud-background.jpg') no-repeat center center/cover;
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
     padding: 150px 20px;
     text-align: center;
+    background-size: cover;
 }
-
 
 .hero-section h1 {
     font-size: 3rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .hero-section .btn {
@@ -36,15 +38,6 @@ body {
 
 .hero-section .btn:hover {
     background-color: #0056b3;
-}
-
-/* About Section */
-#about p {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 800px;
-    line-height: 1.8;
-    font-size: 1.1rem;
 }
 
 /* Skills Section */
@@ -68,6 +61,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .skill-card:hover {
@@ -107,6 +101,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     color: #333;
+    margin-bottom: 20px;
 }
 
 .contact-card:hover {
@@ -130,9 +125,67 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Layout Adjustments for Small Screens */
 @media (max-width: 768px) {
     .hero-section {
         padding: 100px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem; /* Smaller heading for mobile */
+    }
+
+    .hero-section .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .skills-section {
+        padding: 40px 20px;
+    }
+
+    .skills-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Stack skill and contact cards on mobile */
+    .skill-card, .contact-card {
+        margin-bottom: 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4 {
+        width: 100%; /* Make columns full width on mobile */
+        margin-bottom: 20px;
+    }
+}
+
+/* Ensure the links are visible and responsive */
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.5rem; /* Adjust for small screens */
+    }
+
+    .hero-section .btn {
+        font-size: 1rem;
+        padding: 10px 15px;
     }
 }
