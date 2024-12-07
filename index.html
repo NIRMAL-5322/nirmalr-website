@@ -5,119 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirmal R - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Nirmal R</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <section id="hero" class="text-center p-5 bg-primary text-white">
-        <h1 class="display-4">Welcome to My Portfolio</h1>
-        <p>Web Developer | Cloud Enthusiast | Manual Tester</p>
-        <a href="#projects" class="btn btn-light btn-lg">Explore My Work</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section text-center p-5 text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bolder"><strong>Nirmal R</strong></h1>
+            <p>Web Developer | Cloud Enthusiast | Manual Tester</p>
+            <a href="#projects" class="btn btn-lg btn-primary">Explore My Work</a>
+        </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="container my-5">
-        <h2>About Me</h2>
-        <p>I am a web developer skilled in ASP.NET, C#, and MySQL. My expertise also extends to manual testing and cloud solutions with AWS and DevOps tools. I am passionate about delivering robust and efficient solutions.</p>
+        <h2><strong>About Me</strong></h2>
+        <p>I am a passionate Web Developer skilled in ASP.NET, C#, MySQL, and AWS. I love creating efficient solutions and testing them for performance and functionality.</p>
     </section>
 
-    <section id="skills" class="container my-5">
-        <h2>Skills</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section p-5">
+        <h2><strong>Skills</strong></h2>
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card text-center">
-                    <i class="fa fa-code fa-3x mt-4"></i>
-                    <div class="card-body">
-                        <h5>Web Development</h5>
-                        <p>ASP.NET, C#, MySQL</p>
-                    </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <i class="fa fa-code fa-3x"></i>
+                    <h5>Web Development</h5>
+                    <p>ASP.NET, C#, MySQL</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card text-center">
-                    <i class="fa fa-cloud fa-3x mt-4"></i>
-                    <div class="card-body">
-                        <h5>Cloud</h5>
-                        <p>AWS (EC2, S3, RDS)</p>
-                    </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <i class="fa fa-cloud fa-3x"></i>
+                    <h5>Cloud Computing</h5>
+                    <p>AWS, EC2, S3, RDS</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card text-center">
-                    <i class="fa fa-bug fa-3x mt-4"></i>
-                    <div class="card-body">
-                        <h5>Testing</h5>
-                        <p>Manual Testing</p>
-                    </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <i class="fa fa-bug fa-3x"></i>
+                    <h5>Manual Testing</h5>
+                    <p>Quality Assurance</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="container my-5">
-        <h2>Projects</h2>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section p-5">
+        <h2><strong>Contact</strong></h2>
         <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <img src="assets/project1.jpg" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Deployment Automation</h5>
-                        <p>CI/CD pipelines with cloud servers.</p>
-                    </div>
+            <div class="col-md-4 mb-4">
+                <div class="contact-card">
+                    <i class="fa fa-envelope fa-3x"></i>
+                    <h5>Email</h5>
+                    <p><a href="mailto:nirmalr0503@gmail.com">nirmalr0503@gmail.com</a></p>
                 </div>
             </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card">
-                    <img src="assets/project2.jpg" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
-                        <p>Dynamic web page using ASP.NET and MySQL.</p>
-                    </div>
+            <div class="col-md-4 mb-4">
+                <div class="contact-card">
+                    <i class="fa fa-linkedin fa-3x"></i>
+                    <h5>LinkedIn</h5>
+                    <p><a href="https://www.linkedin.com/in/nirmal-r-295507260" target="_blank">Visit My LinkedIn</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="contact-card">
+                    <i class="fa fa-phone fa-3x"></i>
+                    <h5>Phone</h5>
+                    <p><a href="tel:+918015709435">+91 8015709435</a></p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="contact" class="container my-5">
-    <h2>Contact</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <h5>Email</h5>
-            <p><a href="mailto:nirmalr0503@gmail.com">nirmalr0503@gmail.com</a></p>
-        </div>
-        <div class="col-md-4">
-            <h5>LinkedIn</h5>
-            <p><a href="https://www.linkedin.com/in/nirmal-r-295507260" target="_blank">Visit My LinkedIn</a></p>
-        </div>
-        <div class="col-md-4">
-            <h5>Phone</h5>
-            <p><a href="tel:+918015709435">+91 8015709435</a></p>
-        </div>
-    </div>
-</section>
-
-
-    <footer class="text-center p-3 bg-light">
-        <p>&copy; 2024 Nirmal R. All Rights Reserved.</p>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
